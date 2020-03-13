@@ -15,6 +15,8 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="site.webmanifest">
+		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
 	</head>
 	<body class="is-preload">
 
@@ -67,25 +69,30 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="POST" action="https://script.google.com/macros/s/AKfycbxCCLPBJVhou1nNw22ARhPf6q3nqdQ2ItwpzPw_Ow/exec" class="gform">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input required type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input required type="text" name="email" id="email" />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea required name="message" id="message" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+									<div style="display:none" class="thankyou_message">
+										<!-- You can customize the thankyou message by editing the code below -->
+										<h2><em>Thanks</em> for contacting me! I'll get back to you soon!
+										</h2>
+									 </div>
 								</form>
 								<ul class="icons">						
 									<li><a target="_blank" href="https://www.linkedin.com/in/will-smith-0a958b198/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -115,6 +122,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 	</body>
 </html>
